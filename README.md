@@ -1,20 +1,20 @@
 # animal_trivia
 The animal trivia application serves as an educational and entertaining tool for users who are interested in testing their knowledge about animals. Here are some potential uses of the application:
 
-Learning
-Entertainment
-Teaching
-Brain Exercise
-Stress Relief
+Learning<br>
+Entertainment<br>
+Teaching<br>
+Brain Exercise<br>
+Stress Relief<br>
 
 # SetUp Process
-Install Python
-pip install pipenv
-pipenv install flask
-pipenv shell //activate virtualenv
-
-- Jinja (Creating templates)
-- Werkzeug (http routing, map url's)
+Install Python<br>
+pip install pipenv<br>
+pipenv install flask<br>
+pipenv shell //activate virtualenv<br>
+<br>
+- Jinja (Creating templates)<br>
+- Werkzeug (http routing, map url's)<br>
 
 # json
 we are using json (questions.json) file to store and remove the questions & answers instead of database.
