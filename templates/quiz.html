@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/quiz.css"/>
+    <title>Animal Trivia App</title>
+</head>
+
+<body>
+    <div class="content">
+        <div class="question">
+            <p>{{question.question}}</p>
+        </div>
+        <div class="answer">
+
+            <p>{{question.answer}}</p>
+        </div>
+    </div>
+
+    <!-- Home Button -->
+    <a href="{{url_for('welcome')}}">Home</a>
+    <br>
+
+    <!-- Next Question Button -->
+    <!-- <a href="/questions/{{index+1}}">Next Question</a> -->
+    <!-- <a href="{{url_for('questions_view', index=index+1)}}">Next Question</a> -->
+    <button>
+        {% if index < max_index%}
+        <a href="{{url_for('questions_view', index=index+1)}}">Next Question</a>
+        {% else %}
+        <a href="{{url_for('questions_view', index=0)}}">Start over</a>
+        {% endif %}
+    </button>
+
+    <div class="links">
+        <!-- <a href="{{url_for('welcome')}}">Home</a> -->
+
+        <a href="{{url_for('remove_question', index=index)}}">Remove This Question</a>
+    </div>
+</body>
+
+</html>
